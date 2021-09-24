@@ -1,5 +1,5 @@
 plugins {
-    id 'idea'
+    id "com.github.johnrengelman.shadow" version "7.0.0"
     id 'java-library'
     id 'maven-publish'
     id 'signing'
@@ -17,7 +17,10 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok:1.18.20'
 
-    implementation 'io.vavr:vavr:1.0.0-alpha-3'
+    api 'io.vavr:vavr:1.0.0-alpha-3'
+    api 'javax.annotation:javax.annotation-api:1.3.2'
+
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
 
 }
 
