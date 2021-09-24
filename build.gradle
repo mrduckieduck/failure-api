@@ -1,0 +1,21 @@
+plugins {
+    id 'idea'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+version "0.1.0"
+group "dev.mrpato.failure"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor('org.projectlombok:lombok:1.18.20')
+
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+
+    implementation 'io.vavr:vavr:1.0.0-alpha-3'
+
+}
